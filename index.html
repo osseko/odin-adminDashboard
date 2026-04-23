@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="leftPanel">
+
+            <div class="header">
+                <img src="./img/hamburger.svg" class="icon">
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="navigation">
+                <ul>
+                    <li> <img src="./img/home.svg" class="icon">
+                        Home</li>
+                    <li> <img src="./img/monitor-account.svg" class="icon">
+                        Profile</li>
+                    <li> <img src="./img/message.svg" class="icon">
+                        Messages</li>
+                    <li> <img src="./img/history.svg" class="icon">
+                        History</li>
+                    <li> <img src="./img/file-export.svg" class="icon">
+                        Tasks</li>
+                    <li> <img src="./img/account-group.svg" class="icon">
+                        Communitites</li>
+                </ul>
+            </div>
+
+            <div class="settings">
+                <ul>
+                    <li> <img src="./img/cog.svg" class="icon">
+                        Settings</li>
+                    <li> <img src="./img/face-agent.svg" class="icon">
+                        Support</li>
+                    <Li> <img src="./img/shield-account.svg" class="icon">
+                        Privacy</li>
+                </ul>    
+            </div>
+            
+        </div>
+
+        <div class="header">
+            <div class="headSearch">
+                <img src="./img/magnify.svg" class="icon">
+                <input type="search"/>
+                <img src="./img/bell.svg" class="icon">
+                <img src="./img/account.svg" class="icon" id="userpic">
+                <div class="username">Morgan Oakley</div>
+            </div>
+
+            <div class="userinfo">
+                <div class="userGreet">
+                    <img src="./img/account.svg" class="icon" id="userpicbig">
+                    <p>Hi there,</p>
+                    <h1>Morgan Oakley(@morgan)</h1>
+                </div>
+
+                <div class="userButton">
+                    <button id="new">New</button>
+                    <button id="upload">Upload</button>
+                    <button id="share">Share</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="projectContainer">
+                <div id="projectheader">
+                    <p>Your projects</p>
+                </div>
+
+                <div class="projectBox">
+                    <div class="project">
+                        <p id="projectTitle">Super Cool Project</p>
+                        <p id="projectDesc">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Suspendisse id 
+                            convallis ligula. Praesent eget volutpat augue, sit amet finibus nulla. 
+                            Suspendisse gravida, augue sed mollis rhoncus, metus diam tempus arcu, a 
+                            commodo augue dui sed ligula. Nullam est felis, commodo at viverra vitae, 
+                            suscipit sed orci. 
+                            </p>
+                        <img src="./img/star-plus.svg" class="icon">
+                        <img src="./img/note-plus.svg" class="icon">
+                        <img src="./img/share-variant-outline.svg" class="icon">
+
+                        <p id="projectTitle">Less Cool Project</p>
+                        <p id="projectDesc">Maecenas finibus sapien sed hendrerit scelerisque. 
+                            Donec eleifend nunc sed risus fringilla, a porttitor elit auctor.
+                             Praesent venenatis cursus congue. Proin porta venenatis magna, id 
+                             tincidunt massa semper at. Pellentesque mollis aliquam porta. Aenean 
+                             tristique ornare dui non tempor. Nunc sed interdum tellus, eu placerat 
+                             orci. Morbi congue ornare dolor, a pellentesque nunc consectetur rhoncus. 
+                             Suspendisse id consequat ligula. Nam venenatis cursus turpis sed posuere. 
+                             Aliquam aliquet urna convallis eros placerat, at accumsan massa rhoncus.
+                            </p>
+                        <img src="./img/star-plus.svg" class="icon">
+                        <img src="./img/note-plus.svg" class="icon">
+                        <img src="./img/share-variant-outline.svg" class="icon">
+                    
+                        <p id="projectTitle">Impossible App</p>
+                        <p id="projectDesc">Quisque quis aliquam nulla. Fusce id turpis consectetur, 
+                            volutpat augue et, rutrum mauris. Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Curabitur congue nec est at pulvinar.
+                            </p>
+                        <img src="./img/star-plus.svg" class="icon">
+                        <img src="./img/note-plus.svg" class="icon">
+                        <img src="./img/share-variant-outline.svg" class="icon">
+
+                        <p id="projectTitle">Easy Peasy App</p>
+                        <p id="projectDesc">Cras ut tincidunt ipsum. Praesent eget dictum justo. 
+                            Etiam maximus purus nec ex efficitur, ac vestibulum leo rutrum. 
+                            Sed commodo purus id est facilisis, nec malesuada magna suscipit. 
+                            Proin eros nisi, elementum nec purus eu, ullamcorper semper neque. 
+                            Nunc hendrerit erat id tellus porttitor, eget ultrices felis ullamcorper. 
+                            Nullam porttitor blandit turpis sit amet convallis.
+                            </p>
+                        <img src="./img/star-plus.svg" class="icon">
+                        <img src="./img/note-plus.svg" class="icon">
+                        <img src="./img/share-variant-outline.svg" class="icon">
+
+                        <p id="projectTitle">Ad Blocker</p>
+                        <p id="projectDesc">Vestibulum pharetra mollis nunc, eu accumsan orci venenatis id. 
+                            Donec in malesuada massa. Donec tempus nec diam sit amet blandit.
+                            </p>
+                        <img src="./img/star-plus.svg" class="icon">
+                        <img src="./img/note-plus.svg" class="icon">
+                        <img src="./img/share-variant-outline.svg" class="icon">
+
+                        <p id="projectTitle">Money Maker</p>
+                        <p id="projectDesc">Duis congue semper lorem, sed dictum purus tincidunt a. 
+                            Aliquam quis augue cursus, convallis turpis ultricies, tempor tortor. 
+                            Etiam consequat convallis urna at tristique. Mauris in facilisis diam, 
+                            nec pulvinar ligula. Sed scelerisque, tortor eu fermentum vulputate, 
+                            erat urna venenatis erat, in ultricies mi urna sit amet ipsum. 
+                            </p>
+                        <img src="./img/star-plus.svg" class="icon">
+                        <img src="./img/note-plus.svg" class="icon">
+                        <img src="./img/share-variant-outline.svg" class="icon">
+                    </div>
+                </div>
+
+                <div class="contentpanel">
+                    <div class="announce">
+                        <p>Announcements</p>
+                        <div class="updates">
+                            <div class="pageupdates">
+                                <p id="uptitle">Site Maintenance</p>
+                                <p id="updesc">Phasellus tincidunt dolor vel ultrices faucibus. 
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+                                    posuere cubilia curae; Aliquam feugiat a felis in ultricies.
+                                     Fusce lorem ligula, mattis in odio ut, luctus sagittis arcu. 
+                                     </p>
+                            </div>
+
+                            <div class="pageupdates">
+                                <p id="uptitle">Community Share Day</p>
+                                <p id="updesc">Cras finibus, tellus vitae fringilla varius, arcu purus 
+                                    pellentesque mauris, vel porttitor neque nisi a elit. Sed ut mauris 
+                                    congue velit efficitur lobortis.
+                                    </p>
+                            </div>
+
+                            <div class="pageupdates">
+                                <p id="uptitle">Updated Privacy Policy</p>
+                                <p id="updesc"> Fusce lorem ligula, mattis in odio ut, luctus sagittis arcu. 
+                                    Integer justo lectus, pellentesque a leo sed, consequat malesuada turpis. 
+                                    Nam malesuada libero ante, ut ultricies odio bibendum sed. Mauris sit amet 
+                                    nisl consequat sapien consectetur efficitur. 
+                                    </p>
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="announce">
+            </div>
+
+            <div class="trend">
+                <p>Trending</p>
+                <div class="trendbox">
+                    <div class="trendItem">
+                        <img src="./img/account.svg" class="icon">
+                        <p>@tegan</p>
+                        <p>World Peace Builder</p>
+                    </div>
+
+                    <div class="trendItem">
+                        <img src="./img/account.svg" class="icon">
+                        <p>@morgan</p>
+                        <p>Super Cool Project</p>
+                    </div>
+
+                    <div class="trendItem">
+                        <img src="./img/account.svg" class="icon">
+                        <p>@kendall</p>
+                        <p>Life Changing App</p>
+                    </div>
+
+                    <div class="trendItem">
+                        <img src="./img/account.svg" class="icon">
+                        <p>@alex</p>
+                        <p>No Traffic Maker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
