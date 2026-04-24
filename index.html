@@ -11,7 +11,7 @@
 
         <div class="leftPanel">
 
-            <div class="header">
+            <div class="dashboard">
                 <img src="./img/hamburger.svg" class="icon">
                 <h1>Dashboard</h1>
             </div>
@@ -50,23 +50,27 @@
             <div class="headSearch">
                 <img src="./img/magnify.svg" class="icon">
                 <input type="search"/>
+            </div>
+            <div class="headUser">
                 <img src="./img/bell.svg" class="icon">
-                <img src="./img/account.svg" class="icon" id="userpic">
+                <img src="./img/whale-svgrepo-com.svg" class="icon" id="userpic">
                 <div class="username">Morgan Oakley</div>
             </div>
 
-            <div class="userinfo">
-                <div class="userGreet">
-                    <img src="./img/account.svg" class="icon" id="userpicbig">
+            <div class="userGreet">
+                <div id="avatar">
+                    <img src="./img/whale-svgrepo-com.svg" class="icon" id="userpicbig">
+                </div>
+                <div id="hiUser">
                     <p>Hi there,</p>
                     <h1>Morgan Oakley(@morgan)</h1>
                 </div>
+            </div>
 
-                <div class="userButton">
-                    <button id="new">New</button>
-                    <button id="upload">Upload</button>
-                    <button id="share">Share</button>
-                </div>
+            <div class="userButton">
+                <button id="new">New</button>
+                <button id="upload">Upload</button>
+                <button id="share">Share</button>
             </div>
         </div>
 
@@ -78,75 +82,111 @@
 
                 <div class="projectBox">
                     <div class="project">
-                        <p id="projectTitle">Super Cool Project</p>
-                        <p id="projectDesc">Lorem ipsum dolor sit amet, 
-                            consectetur adipiscing elit. Suspendisse id 
-                            convallis ligula. Praesent eget volutpat augue, sit amet finibus nulla. 
-                            Suspendisse gravida, augue sed mollis rhoncus, metus diam tempus arcu, a 
-                            commodo augue dui sed ligula. Nullam est felis, commodo at viverra vitae, 
-                            suscipit sed orci. 
-                            </p>
-                        <img src="./img/star-plus.svg" class="icon">
-                        <img src="./img/note-plus.svg" class="icon">
-                        <img src="./img/share-variant-outline.svg" class="icon">
+                        <div class="projThumb">
+                            <p id="projectTitle">Super Cool Project</p>
+                            <p id="projectDesc">Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit. Suspendisse id 
+                                convallis ligula. Praesent eget volutpat augue, sit amet finibus nulla. 
+                                Suspendisse gravida, augue sed mollis rhoncus, metus diam tempus arcu, a 
+                                commodo augue dui sed ligula. Nullam est felis, commodo at viverra vitae, 
+                                suscipit sed orci. 
+                                </p>
+                        </div>
 
-                        <p id="projectTitle">Less Cool Project</p>
-                        <p id="projectDesc">Maecenas finibus sapien sed hendrerit scelerisque. 
-                            Donec eleifend nunc sed risus fringilla, a porttitor elit auctor.
-                             Praesent venenatis cursus congue. Proin porta venenatis magna, id 
-                             tincidunt massa semper at. Pellentesque mollis aliquam porta. Aenean 
-                             tristique ornare dui non tempor. Nunc sed interdum tellus, eu placerat 
-                             orci. Morbi congue ornare dolor, a pellentesque nunc consectetur rhoncus. 
-                             Suspendisse id consequat ligula. Nam venenatis cursus turpis sed posuere. 
-                             Aliquam aliquet urna convallis eros placerat, at accumsan massa rhoncus.
-                            </p>
-                        <img src="./img/star-plus.svg" class="icon">
-                        <img src="./img/note-plus.svg" class="icon">
-                        <img src="./img/share-variant-outline.svg" class="icon">
+                        <div class="projbutton">
+                            <img src="./img/star-plus.svg" class="icon">
+                            <img src="./img/note-plus.svg" class="icon">
+                            <img src="./img/share-variant-outline.svg" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projThumb">
+                            <p id="projectTitle">Less Cool Project</p>
+                            <p id="projectDesc">Maecenas finibus sapien sed hendrerit scelerisque. 
+                                Donec eleifend nunc sed risus fringilla, a porttitor elit auctor.
+                                Praesent venenatis cursus congue. Proin porta venenatis magna, id 
+                                tincidunt massa semper at. Pellentesque mollis aliquam porta. Aenean 
+                                tristique ornare dui non tempor. Nunc sed interdum tellus, eu placerat 
+                                orci. Morbi congue ornare dolor, a pellentesque nunc consectetur rhoncus. 
+                                Suspendisse id consequat ligula. Nam venenatis cursus turpis sed posuere. 
+                                Aliquam aliquet urna convallis eros placerat, at accumsan massa rhoncus.
+                                </p>
+                        </div>
+                        <div class="projbutton">
+                            <img src="./img/star-plus.svg" class="icon">
+                            <img src="./img/note-plus.svg" class="icon">
+                            <img src="./img/share-variant-outline.svg" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projThumb">
+                            <p id="projectTitle">Impossible App</p>
+                            <p id="projectDesc">Quisque quis aliquam nulla. Fusce id turpis consectetur, 
+                                volutpat augue et, rutrum mauris. Lorem ipsum dolor sit amet, consectetur 
+                                adipiscing elit. Curabitur congue nec est at pulvinar.
+                                </p>
+                        </div>
+                        <div class="projbutton">
+                            <img src="./img/star-plus.svg" class="icon">
+                            <img src="./img/note-plus.svg" class="icon">
+                            <img src="./img/share-variant-outline.svg" class="icon">
+                        </div>
+                    </div>
+
+                     <div class="project">
+                        <div class="projThumb">
+                            <p id="projectTitle">Easy Peasy App</p>
+                            <p id="projectDesc">Cras ut tincidunt ipsum. Praesent eget dictum justo. 
+                                Etiam maximus purus nec ex efficitur, ac vestibulum leo rutrum. 
+                                Sed commodo purus id est facilisis, nec malesuada magna suscipit. 
+                                Proin eros nisi, elementum nec purus eu, ullamcorper semper neque. 
+                                Nunc hendrerit erat id tellus porttitor, eget ultrices felis ullamcorper. 
+                                Nullam porttitor blandit turpis sit amet convallis.
+                                </p>
+                        </div>
+                        <div class="projbutton">
+                            <img src="./img/star-plus.svg" class="icon">
+                            <img src="./img/note-plus.svg" class="icon">
+                            <img src="./img/share-variant-outline.svg" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projThumb">
+                            <p id="projectTitle">Ad Blocker</p>
+                            <p id="projectDesc">Vestibulum pharetra mollis nunc, eu accumsan orci venenatis id. 
+                                Donec in malesuada massa. Donec tempus nec diam sit amet blandit.
+                                </p>
+                        </div>
+                        <div class="projbutton">
+                            <img src="./img/star-plus.svg" class="icon">
+                            <img src="./img/note-plus.svg" class="icon">
+                            <img src="./img/share-variant-outline.svg" class="icon">
+                        </div>
+                    </div>
                     
-                        <p id="projectTitle">Impossible App</p>
-                        <p id="projectDesc">Quisque quis aliquam nulla. Fusce id turpis consectetur, 
-                            volutpat augue et, rutrum mauris. Lorem ipsum dolor sit amet, consectetur 
-                            adipiscing elit. Curabitur congue nec est at pulvinar.
-                            </p>
-                        <img src="./img/star-plus.svg" class="icon">
-                        <img src="./img/note-plus.svg" class="icon">
-                        <img src="./img/share-variant-outline.svg" class="icon">
-
-                        <p id="projectTitle">Easy Peasy App</p>
-                        <p id="projectDesc">Cras ut tincidunt ipsum. Praesent eget dictum justo. 
-                            Etiam maximus purus nec ex efficitur, ac vestibulum leo rutrum. 
-                            Sed commodo purus id est facilisis, nec malesuada magna suscipit. 
-                            Proin eros nisi, elementum nec purus eu, ullamcorper semper neque. 
-                            Nunc hendrerit erat id tellus porttitor, eget ultrices felis ullamcorper. 
-                            Nullam porttitor blandit turpis sit amet convallis.
-                            </p>
-                        <img src="./img/star-plus.svg" class="icon">
-                        <img src="./img/note-plus.svg" class="icon">
-                        <img src="./img/share-variant-outline.svg" class="icon">
-
-                        <p id="projectTitle">Ad Blocker</p>
-                        <p id="projectDesc">Vestibulum pharetra mollis nunc, eu accumsan orci venenatis id. 
-                            Donec in malesuada massa. Donec tempus nec diam sit amet blandit.
-                            </p>
-                        <img src="./img/star-plus.svg" class="icon">
-                        <img src="./img/note-plus.svg" class="icon">
-                        <img src="./img/share-variant-outline.svg" class="icon">
-
-                        <p id="projectTitle">Money Maker</p>
-                        <p id="projectDesc">Duis congue semper lorem, sed dictum purus tincidunt a. 
-                            Aliquam quis augue cursus, convallis turpis ultricies, tempor tortor. 
-                            Etiam consequat convallis urna at tristique. Mauris in facilisis diam, 
-                            nec pulvinar ligula. Sed scelerisque, tortor eu fermentum vulputate, 
-                            erat urna venenatis erat, in ultricies mi urna sit amet ipsum. 
-                            </p>
-                        <img src="./img/star-plus.svg" class="icon">
-                        <img src="./img/note-plus.svg" class="icon">
-                        <img src="./img/share-variant-outline.svg" class="icon">
+                    <div class="project">
+                        <div class="projThumb">
+                            <p id="projectTitle">Money Maker</p>
+                            <p id="projectDesc">Duis congue semper lorem, sed dictum purus tincidunt a. 
+                                Aliquam quis augue cursus, convallis turpis ultricies, tempor tortor. 
+                                Etiam consequat convallis urna at tristique. Mauris in facilisis diam, 
+                                nec pulvinar ligula. Sed scelerisque, tortor eu fermentum vulputate, 
+                                erat urna venenatis erat, in ultricies mi urna sit amet ipsum. 
+                                </p>
+                        </div>
+                        <div class="projbutton">
+                            <img src="./img/star-plus.svg" class="icon">
+                            <img src="./img/note-plus.svg" class="icon">
+                            <img src="./img/share-variant-outline.svg" class="icon">
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="contentpanel">
+            <div class="contentpanel">
                     <div class="announce">
                         <p>Announcements</p>
                         <div class="updates">
@@ -179,40 +219,35 @@
                         </div>
                     </div>
                    
-                </div>
-            </div>
+                     <div class="trend">
+                        <p>Trending</p>
+                        <div class="trendbox">
+                            <div class="trendItem">
+                                <img src="./img/crab-svgrepo-com.svg" class="icon">
+                                <p>@tegan</p>
+                                <p>World Peace Builder</p>
+                            </div>
 
-            <div class="announce">
-            </div>
+                            <div class="trendItem">
+                                <img src="./img/whale-svgrepo-com.svg" class="icon">
+                                <p>@morgan</p>
+                                <p>Super Cool Project</p>
+                            </div>
 
-            <div class="trend">
-                <p>Trending</p>
-                <div class="trendbox">
-                    <div class="trendItem">
-                        <img src="./img/account.svg" class="icon">
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                            <div class="trendItem">
+                                <img src="./img/rabbit-svgrepo-com.svg" class="icon">
+                                <p>@kendall</p>
+                                <p>Life Changing App</p>
+                            </div>
+
+                            <div class="trendItem">
+                                <img src="./img/lion-svgrepo-com.svg" class="icon">
+                                <p>@alex</p>
+                                <p>No Traffic Maker</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="trendItem">
-                        <img src="./img/account.svg" class="icon">
-                        <p>@morgan</p>
-                        <p>Super Cool Project</p>
-                    </div>
-
-                    <div class="trendItem">
-                        <img src="./img/account.svg" class="icon">
-                        <p>@kendall</p>
-                        <p>Life Changing App</p>
-                    </div>
-
-                    <div class="trendItem">
-                        <img src="./img/account.svg" class="icon">
-                        <p>@alex</p>
-                        <p>No Traffic Maker</p>
-                    </div>
-                </div>
-            </div>
+                </div>           
         </div>
     </div>
     
