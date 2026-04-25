@@ -1,4 +1,22 @@
 /* 1. Use a more-intuitive box-sizing model */
+@font-face {
+    font-family: 'liera_sansregular';
+    src: url('./font/lierasans-regular-webfont.woff2') format('woff2'),
+         url('./font/lierasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'liera_sanssemibold';
+    src: url('./font/lierasans-semibold-webfont.woff2') format('woff2'),
+         url('./font/lierasans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -38,6 +56,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+  font-family: 'liera_sanssemibold';
 }
 /*
   10. Create a root stacking context
@@ -58,63 +77,75 @@ li{
 }
 
 .icon{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
 }
 
 img{
-  margin-right: 1em;
+  margin-right: .5em;
+}
+
+.page{
+  background-color: rgb(200, 211, 223);
 }
 
 .container{
-  background-color: dodgerblue;
+  
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(auto, 1fr) 4fr;
   grid-template-rows: 1fr 6fr;
-  gap: 20px;
-  height: 80vh;
+  /* gap: 20px; */
+  font-family: 'liera_sansregular';
 }
 
 
 .leftPanel{
-  background-color: coral;
+  background-color: rgb(31, 146, 212);  
   grid-column: 1;
   grid-row: 1 / 3;
 
   display: grid;
-  grid-template-rows: 7% 1fr 3fr;
-  align-content: center;
-  margin-left: 10%;
+  grid-template-rows: 10% 30% 60%;
 
-  font-size: min(25px, 100px)
+
+  font-size: min(30px, 100px);
+  font-weight: bold;
 }
 
   .dashboard{
     /* background-color: aliceblue; */
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-self: center;
     align-items: center;
     font-size: 25px;
-   
+    margin-left: 5%;
   }
 
     .dashboard > img{
-      height: 50px;
-      width: 50px;
+      height: 80px;
+      width: 80px;
     }
+
+      .dashboard ~ div{
+      margin-left: 10%;
+      align-self: self-start;
+    }
+
+
   .navigation{
     /* background-color: bisque; */
-   
+
   }
    
   .settings{
     /* background-color: yellow; */
-
+   
   }
  
 
 .header{
-  background-color: chartreuse;
+  background-color: white;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -127,6 +158,10 @@ img{
   }
     .headSearch > input {
       width: 100%;
+      background-color:  rgb(200, 211, 223);
+      border: .5px none blue;
+      border-radius: 25px;
+      font-size: 25px;
     }
   
     .headUser{
@@ -164,7 +199,7 @@ img{
       }
 
 .content{
-  background-color: hotpink;
+ 
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
@@ -172,15 +207,25 @@ img{
 .projectBox{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 
 .project{
-  background-color: aqua;
-  height: 100%;
-  width: 100%;
+  
+  height: 300px;
+  width: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 95% 5% ;
+ 
+  padding: 4% 4% 4% 4%;
+  margin: 10px;
 }
+  .projThumb{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+  }
 
   .projbutton{
     display: flex;
@@ -192,3 +237,25 @@ img{
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+
+
+  .updates{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+    .pageupdates{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+
+    }
+
+.trendItem{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+  .trendItem > img{
+    height: 70px;
+    width: 70px;
+  }
