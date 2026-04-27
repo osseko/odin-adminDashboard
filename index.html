@@ -18,31 +18,33 @@
             </div>
 
             <div class="navigation">
-                <ul>
-                    <li> <img src="./img/home.svg" class="icon">
-                        Home</li>
-                    <li> <img src="./img/monitor-account.svg" class="icon">
-                        Profile</li>
-                    <li> <img src="./img/message.svg" class="icon">
-                        Messages</li>
-                    <li> <img src="./img/history.svg" class="icon">
-                        History</li>
-                    <li> <img src="./img/file-export.svg" class="icon">
-                        Tasks</li>
-                    <li> <img src="./img/account-group.svg" class="icon">
-                        Communitites</li>
-                </ul>
-            </div>
+                <div class="subnav">
+                    <ul>
+                        <li> <img src="./img/home.svg" class="icon">
+                            Home</li>
+                        <li> <img src="./img/monitor-account.svg" class="icon">
+                            Profile</li>
+                        <li> <img src="./img/message.svg" class="icon">
+                            Messages</li>
+                        <li> <img src="./img/history.svg" class="icon">
+                            History</li>
+                        <li> <img src="./img/file-export.svg" class="icon">
+                            Tasks</li>
+                        <li> <img src="./img/account-group.svg" class="icon">
+                            Communitites</li>
+                    </ul>
+                </div>
 
-            <div class="settings">
-                <ul>
-                    <li> <img src="./img/cog.svg" class="icon">
-                        Settings</li>
-                    <li> <img src="./img/face-agent.svg" class="icon">
-                        Support</li>
-                    <Li> <img src="./img/shield-account.svg" class="icon">
-                        Privacy</li>
-                </ul>    
+                <div class="settings">
+                    <ul>
+                        <li> <img src="./img/cog.svg" class="icon">
+                            Settings</li>
+                        <li> <img src="./img/face-agent.svg" class="icon">
+                            Support</li>
+                        <Li> <img src="./img/shield-account.svg" class="icon">
+                            Privacy</li>
+                    </ul>    
+                </div>
             </div>
             
         </div>
@@ -53,7 +55,7 @@
                 <input type="search"/>
             </div>
             <div class="headUser">
-                <img src="./img/bell.svg" class="icon">
+                <img src="./img/bell.svg" class="icon" id="notifbell">
                 <img src="./img/whale-svgrepo-com.svg" class="icon" id="userpic">
                 <div class="username">Morgan Oakley</div>
             </div>
@@ -196,15 +198,14 @@
                                 <p id="updesc">Phasellus tincidunt dolor vel ultrices faucibus. 
                                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
                                     posuere cubilia curae; Aliquam feugiat a felis in ultricies.
-                                     Fusce lorem ligula, mattis in odio ut, luctus sagittis arcu. 
+                                     
                                      </p>
                             </div>
 
-                            <div class="pageupdates">
+                            <div class="pageupdates" id="middleupdate">
                                 <p id="uptitle">Community Share Day</p>
                                 <p id="updesc">Cras finibus, tellus vitae fringilla varius, arcu purus 
-                                    pellentesque mauris, vel porttitor neque nisi a elit. Sed ut mauris 
-                                    congue velit efficitur lobortis.
+                                    pellentesque mauris, vel porttitor neque nisi a elit. 
                                     </p>
                             </div>
 
@@ -212,8 +213,7 @@
                                 <p id="uptitle">Updated Privacy Policy</p>
                                 <p id="updesc"> Fusce lorem ligula, mattis in odio ut, luctus sagittis arcu. 
                                     Integer justo lectus, pellentesque a leo sed, consequat malesuada turpis. 
-                                    Nam malesuada libero ante, ut ultricies odio bibendum sed. Mauris sit amet 
-                                    nisl consequat sapien consectetur efficitur. 
+                                    
                                     </p>
                             </div>
 
@@ -224,7 +224,7 @@
                         <p>Trending</p>
                         <div class="trendbox">
                             <div class="trendItem">
-                                <img src="./img/crab-svgrepo-com.svg" class="icon">
+                                <img src="./img/crab-svgrepo-com.svg" class="icon" id="picone">
                                 <div id="trendpost">
                                     <p>@tegan</p>
                                     <p>World Peace Builder</p>
@@ -232,7 +232,7 @@
                             </div>
 
                             <div class="trendItem">
-                                <img src="./img/whale-svgrepo-com.svg" class="icon">
+                                <img src="./img/whale-svgrepo-com.svg" class="icon" id="pictwo">
                                 <div id="trendpost">
                                     <p>@morgan</p>
                                     <p>Super Cool Project</p>
@@ -240,7 +240,7 @@
                             </div>
 
                             <div class="trendItem">
-                                <img src="./img/rabbit-svgrepo-com.svg" class="icon">
+                                <img src="./img/rabbit-svgrepo-com.svg" class="icon" id="picthree">
                                 <div id="trendpost">
                                     <p>@kendall</p>
                                     <p>Life Changing App</p>
@@ -248,7 +248,7 @@
                             </div>
 
                             <div class="trendItem">
-                                <img src="./img/lion-svgrepo-com.svg" class="icon">
+                                <img src="./img/lion-svgrepo-com.svg" class="icon" id="picfour">
                                 <div id="trendpost">
                                     <p>@alex</p>
                                     <p>No Traffic Maker</p>
