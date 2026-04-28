@@ -81,12 +81,15 @@ li{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    
 }
 
 img{
   margin-right: .5em;
   
 }
+
+
 
 .page{
   background-color: rgb(200, 211, 223);
@@ -112,9 +115,22 @@ img{
 
   font-size: calc(12px + .5vw);
   font-weight: bold;
+  color: white;
   padding-right: 2%;
   overflow: hidden;
 }
+
+  .leftPanel img{
+    filter: invert();
+  }
+
+  li:hover{
+    background-color: rgb(20, 70, 206);
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: calc(20px + .5vw);
+  }
+  
 
   .dashboard{
     display: grid;
@@ -171,12 +187,22 @@ img{
   }
     .headSearch > input {
       width: 100%;
+      height: 50px;
       background-color:  rgb(200, 211, 223);
-      border: .5px none blue;
+      border: 1px none rgba(31, 146, 212, .2); 
       border-radius: 25px;
       font-size: 25px;
+      
+      padding-left: 15px;
     }
-  
+
+    .headSearch > input:focus{
+      outline-color: rgba(31, 146, 212, .5); 
+      
+      height: 60px;
+      border-radius: 50px;
+      box-shadow: 3px 2px 8px rgba(0, 0, 0, .3)
+    }
     .headUser{
     
       display: flex;
@@ -190,6 +216,13 @@ img{
         background-color:  rgb(255, 214, 29);
       }
 
+      #notifbell:hover{
+        background-color: rgba(31, 146, 212, .5);
+        box-shadow: 3px 5px 3px rgba(0, 0, 0, .3);
+        height: 70px;
+        width: 70px;
+      }
+
       .headUser > *{
         margin: 0 .5em 0 .5em;
       }
@@ -197,6 +230,11 @@ img{
       #userpic{
         height: 80px;
         width: 80px;
+      }
+
+      .username:hover{
+        font-size: 20px;
+
       }
 
     .userGreet{
@@ -229,11 +267,25 @@ img{
         width: 75%;
         border: .5px none;
         font-size: calc(10px + .3vw);
+        color: white;
         background-color: rgb(31, 146, 212); 
         align-content: center;
         justify-content: center;
+        padding: 25px 10px 25px 10px;
       }
 
+      
+
+      button:hover{
+        background-color: rgb(20, 70, 206);
+        height: 50px;
+        width: 90%;
+        box-shadow: 3px 5px 3px rgba(0, 0, 0, .3);
+      }
+
+      button:focus{
+        
+      }
         
 
 /*  */
@@ -270,6 +322,13 @@ img{
   padding: 8% 10% 8% 8%;
   margin: 10px;
 }
+
+  .project:hover{
+    height: 400px;
+    width: auto;
+  }
+
+
   .projThumb{
     display: grid;
     grid-template-rows: 10% 1fr;
@@ -295,6 +354,15 @@ img{
     .projbutton > img{
       height: 30px;
       width: max(30px, .5vw);
+      
+    }
+
+    .projbutton > img:hover{
+      height: 40px;
+      width: max(40px, .5vw);
+      background-color: rgba(255, 214, 29, .5);
+      box-shadow: 3px 5px 3px rgba(0, 0, 0, .3);
+
     }
 
 .contentpanel{
@@ -322,7 +390,10 @@ img{
       display: flex;
       flex-direction: column;
       margin: 0 4% 0 4%;
-     
+    }
+
+    .pageupdates:hover{
+      background-color: rgba(255, 214, 29, .5);
     }
       
       .pageupdates > * {
@@ -348,6 +419,10 @@ img{
   font-size: calc(7px + .5vw);
   padding: 5%;
 }
+
+  .trendItem:hover{
+    background-color: rgba(255, 214, 29, .5);
+  }
 
   .trendbox{
     background-color: white;
